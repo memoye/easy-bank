@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  text-decoration: none;
+}
+
+section.headerSection {
+  background-color: hsl(0, 0%, 100%);
+  position: sticky;
+  top: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  font-size: 1rem;
+  color: hsl(233, 8%, 62%);
+  padding: 1.25em 0.5em;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px solid;
+  color: hsl(233, 26%, 24%);
+  border-image: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    )
+    1;
+}
+
+.inviteRequest {
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 0.5em 2em;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 2.5rem;
+  border: none;
+  font-size: 1em;
+}
+
+.inviteRequest:hover {
+  background: linear-gradient(to right, hsl(136, 65%, 60%), hsl(192, 70%, 60%));
+  cursor: pointer;
+}
+
+/* 
+We were struggling with placing the 
+background on the img div so we put it 
+in the .hero div instead (line 76) 
+*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+  background-color: hsl(0, 0%, 98%);
+  background-image: url("images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 37vw -40vh;
+  height: 100vh;
+  padding-left: 10em;
+}
+
+.heroImg {
+  /* background-image: url("images/bg-intro-desktop.svg"); */
+  overflow-x: hidden;
+}
+
+.heroImg img {
+  margin-top: 50px;
+  margin-right: -130px;
+}
+
+.heroText {
+  width: 31vw;
+}
+
+.heroText h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+  color: hsl(233, 26%, 24%);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: hsl(233, 8%, 62%);
+  line-height: 1.5em;
+}
+
+/* !! WE STOPPED AROUND HERE */
+
+.whyAndServices {
+  background-color: hsl(220, 16%, 96%);
+  padding: 7em 10em;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.whySection {
+  width: 60%;
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 2.5rem;
+}
+
+.services {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 4rem;
+}
+
+h3 {
+  color: hsla(233, 26%, 24%);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.services h3 {
+  color: hsla(233, 26%, 24%, 0.8);
+}
+
+.services p {
+  color: hsl(233, 8%, 62%, 0.8);
+  font-size: 1rem;
+}
+
+.services img {
+  margin-bottom: 1rem;
+  width: 3em;
+}
+
+article {
+  font-size: 0.8rem;
+  background-color: hsl(0, 0%, 98%);
+  padding: 7rem 10rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+article img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px 5px 0 0;
+}
+
+.articles {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.articles div {
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.articleText {
+  padding: 1.5em;
+}
+
+.articleText h4 {
+  font-size: 1.5em;
+  margin-top: 0.7rem;
+  font-weight: 300;
+}
+
+.articleText h4:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+.articleText p {
+  font-size: 1.25em;
+  margin-top: 0.7rem;
+}
+
+footer {
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  padding: 2em 10em;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer > div {
+  flex: 1;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerIcons ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerIcons a {
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footerIcons a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.footerIcons > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.copyright * {
+  margin: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+.copyright {
+  text-align: right;
+}
+
+.copyright p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  margin: 0.25em;
+}
