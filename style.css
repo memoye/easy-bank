@@ -97,7 +97,7 @@ in the .hero div instead (line 76)
 }
 
 .heroText h1 {
-  font-size: 3.5rem;
+  font-size: 7vmin;
   font-weight: 400;
   margin-top: -2rem;
   margin-bottom: 1.5rem;
